@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "prompt-optimizer": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-prompt-optimizer"
+      ]
+    }
+  }
+}
