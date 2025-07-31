@@ -1,11 +1,23 @@
 {
-  "name": "@modelcontextprotocol/server-prompt-optimizer",
-  "version": "0.1.0",
+  "name": "@zhaixiaowei/mcp-prompt-optimizer",
+  "version": "1.0.0",
   "description": "MCP server for optimizing and enhancing prompts for better AI interactions",
   "license": "MIT",
-  "author": "Anthropic, PBC (https://anthropic.com)",
-  "homepage": "https://modelcontextprotocol.io",
-  "bugs": "https://github.com/modelcontextprotocol/servers/issues",
+  "author": "你的名字 <你的邮箱>",
+  "homepage": "https://github.com/你的用户名/prompt-optimizer",
+  "bugs": "https://github.com/你的用户名/prompt-optimizer/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/你的用户名/prompt-optimizer.git"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "prompt-optimization",
+    "ai",
+    "cursor",
+    "claude"
+  ],
   "type": "module",
   "bin": {
     "mcp-server-prompt-optimizer": "dist/index.js"

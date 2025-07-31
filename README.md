@@ -1,6 +1,6 @@
 # 提示词优化 MCP 服务器
 
-一个模型上下文协议 (MCP) 服务器，为 AI 交互提供智能提示词优化功能。此服务器在提供实用的提示词增强功能的同时，展示了 MCP 的核心概念。
+一个模型上下文协议 (MCP) 服务器，为 AI 交互提供智能能提示词优化功能。此服务器在提供实用的提示词增强功的同时，展示了 MCP 的核心概念。
 
 ## 🎯 展示的核心 MCP 概念
 
@@ -43,21 +43,26 @@
 
 ## 📦 安装
 
-### 使用 npm
+### 使用 npm 全局安装
 ```bash
-npm install @modelcontextprotocol/server-prompt-optimizer
+npm install -g @zhaixiaowei/mcp-prompt-optimizer
 ```
 
 ### 使用 npx (推荐用于 Cursor)
 ```bash
-npx @modelcontextprotocol/server-prompt-optimizer
+npx @zhaixiaowei/mcp-prompt-optimizer
+```
+
+### 本地项目安装
+```bash
+npm install @zhaixiaowei/mcp-prompt-optimizer
 ```
 
 ## 🔧 配置
 
 ### 在 Cursor 中使用
 
-要在 Cursor 中使用此 MCP 服务器，请将以下配置添加到你的 `claude_desktop_config.json` 文件中：
+要在 Cursor 中使用此 MCP 服务器，请将以下配置添加到你的 cursor的mcp配置中 文件中：
 
 #### 方法 1: 使用 npx (推荐)
 ```json
@@ -67,34 +72,12 @@ npx @modelcontextprotocol/server-prompt-optimizer
       "command": "npx",
       "args": [
         "-y",
-        "@modelcontextprotocol/server-prompt-optimizer"
+        "@zhaixiaowei/mcp-prompt-optimizer"
       ]
     }
   }
 }
 ```
-
-#### 方法 2: 使用本地安装
-```json
-{
-  "mcpServers": {
-    "prompt-optimizer": {
-      "command": "node",
-      "args": [
-        "/path/to/node_modules/@modelcontextprotocol/server-prompt-optimizer/dist/index.js"
-      ]
-    }
-  }
-}
-```
-
-### 配置文件位置
-
-`claude_desktop_config.json` 文件应位于：
-
-- **macOS**: `~/Library/Application Support/Claude/claude_desktop_config.json`
-- **Windows**: `%APPDATA%\Claude\claude_desktop_config.json`
-- **Linux**: `~/.config/Claude/claude_desktop_config.json`
 
 ## 🛠️ 使用方法
 

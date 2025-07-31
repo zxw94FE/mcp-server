@@ -124,6 +124,6 @@ The optimization tool returns:
 3. **Unexpected Results**: Verify your input parameters match the expected format
 
 ### Debug Steps:
-1. Verify the server is running: `npx @modelcontextprotocol/server-prompt-optimizer`
+1. Verify the server is running: `npx @zhaixiaowei/mcp-prompt-optimizer`
 2. Check the configuration file location and syntax
 3. Look for error messages in Cursor's console
